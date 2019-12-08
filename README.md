@@ -11,3 +11,9 @@ Reference: [ListTile Class](https://api.flutter.dev/flutter/material/ListTile-cl
 2. [ListView Dismissible](/listview_dismissible)
 
 Reference: [Implement swipe to dismiss](https://flutter.dev/docs/cookbook/gestures/dismissible)
+
+3. [Work with long lists](/long_lists)
+
+How to use **ListView.builder**
+
+Reference: [Work with long lists](https://flutter.dev/docs/cookbook/lists/long-lists)
