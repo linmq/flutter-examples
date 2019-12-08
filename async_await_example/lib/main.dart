@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 // ==================================================================================
 
-  void printOrderMessage () async {
+  Future<void> printOrderMessage () async {
     try {
       var order = await fetchUserOrder2();
       print('Awaiting user order...');
