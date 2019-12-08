@@ -82,3 +82,37 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+/* Saving and reading data in Flutter with SharedPreferences
+   https://medium.com/@suragch/saving-and-reading-data-in-flutter-with-sharedpreferences-bb4238d3105
+*/
+
+// int
+// read
+// final myInt = prefs.getInt('my_int_key') ?? 0;
+// write
+// prefs.setInt('my_int_key', 42);
+
+// double
+// read
+// final myDouble = prefs.getDouble('my_double_key') ?? 0.0;
+// write
+// prefs.setBool('my_bool_key', true);
+
+// bool
+// read
+// final myBool = prefs.getBool('my_bool_key') ?? false;
+// write
+// prefs.setBool('my_bool_key', true);
+
+// string
+// read
+// final myString = prefs.getString('my_string_key') ?? '';
+// write
+// prefs.setString('my_string_key', 'hello');
+
+// stringList
+// read
+// final myStringList = prefs.getStringList('my_string_list_key') ?? [];
+// write
+// prefs.setStringList('my_string_list_key', ['horse', 'cow', 'sheep']);
