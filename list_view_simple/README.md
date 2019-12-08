@@ -1,6 +1,6 @@
-# list_view_simple
+# listview_simple
 
-A new Flutter project.
+A simple ListView example
 
 ## Getting Started
 
