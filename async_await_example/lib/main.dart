@@ -84,6 +84,48 @@ class _MyHomePageState extends State<MyHomePage> {
 
 // ==================================================================================
 
+  Future<void> fetchUserOrderTwice() async {
+    var futures = <Future>[];
+    for (var i=0; i < 2; i++) {
+      // var order = await fetchUserOrder();
+      futures.add(fetchUserOrder());
+    }
+    var result = await Future.wait(futures);
+    print(result);
+  }
+
+  Future<int> async1() async {
+    await Future<String>.delayed(const Duration(seconds: 1));
+    return 10;
+  }
+
+  Future<int> async2() async {
+      await Future<String>.delayed(const Duration(seconds: 2));
+      return 20;
+  }
+
+  Future<int> async3() async {
+      await Future<String>.delayed(const Duration(seconds: 3));
+      return 30;
+  }
+
+  Future<void> asyncTotal() async {
+    var futures = <Future>[];
+    futures.add(async1());
+    futures.add(async2());
+    futures.add(async3());
+    var result = await Future.wait(futures);
+    print(result);
+  }
+
+  Future<void> _handlePressButton3() async {
+    countSeconds(10);
+    await fetchUserOrderTwice();
+    await asyncTotal();
+  }
+
+// ==================================================================================
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -109,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _handlePressButton2,
+        onPressed: _handlePressButton3,
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),

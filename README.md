@@ -27,3 +27,9 @@ Reference: [Shared preferences plugin](https://pub.dev/packages/shared_preferenc
 5. [async await](/async_await_example)
 
 Reference: [Asynchronous programming: futures, async, await](https://dart.dev/codelabs/async-await#sequential-processing-async)
+
+Future.wait
+
+[How to run multiple Dart futures in parallel](https://alvinalexander.com/dart/how-run-multiple-dart-futures-in-parallel)
+
+[Dartlang wait more than one future](https://stackoverflow.com/questions/42176092/dartlang-wait-more-than-one-future)
