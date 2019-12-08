@@ -17,3 +17,7 @@ Reference: [Implement swipe to dismiss](https://flutter.dev/docs/cookbook/gestur
 How to use **ListView.builder**
 
 Reference: [Work with long lists](https://flutter.dev/docs/cookbook/lists/long-lists)
+
+4. [shared preferences](/shared_preferences_example)
+
+Reference: [Shared preferences plugin #](https://pub.dev/packages/shared_preferences)
