@@ -25,18 +25,64 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  String _result = "";
 
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
+  Future<String> createOrderMessage() async {
+    print('Awaiting user order...'); // if swap this line with the next line, the result will be different
+    var order = await fetchUserOrder();
+    print('Your order is: $order');
+    
+    return 'Your order is: $order';
   }
+
+  Future<String> fetchUserOrder() async {
+    // Imagine that this function is more complex and slow
+    return Future.delayed(Duration(seconds: 4), () => 'Large Latte');
+  }
+
+  // You can ignore this function - it's here to visualize delay time in this example.
+  void countSeconds(s) {
+    for( var i = 1 ; i <= s; i++ ) {
+        Future.delayed(Duration(seconds: i), () => print(i));
+    }
+  }
+
+  Future<void> _handlePressButton() async {
+    countSeconds(4);
+    String orderMsg = await createOrderMessage();
+    setState(() {
+      _result = orderMsg;
+    });
+    // print('$orderMsg');
+  }
+
+// ==================================================================================
+
+  void printOrderMessage () async {
+    try {
+      var order = await fetchUserOrder2();
+      print('Awaiting user order...');
+      print(order);
+    } catch (err) {
+      print('Caught error: $err');
+      setState(() {
+        _result = ('Caught error: $err');
+      });
+    }
+  }
+
+  Future<String> fetchUserOrder2() {
+    // Imagine that this function is more complex.
+    var str = Future.delayed(Duration(seconds: 4), () => throw 'Cannot locate user order');
+    return str;
+  }
+
+  Future<void> _handlePressButton2() async {
+    countSeconds(4);
+    await printOrderMessage();
+  }
+
+// ==================================================================================
 
   @override
   Widget build(BuildContext context) {
@@ -53,17 +99,17 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'The order message is:',
             ),
             Text(
-              '$_counter',
+              '$_result',
               style: Theme.of(context).textTheme.display1,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: _handlePressButton2,
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
