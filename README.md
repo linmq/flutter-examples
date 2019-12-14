@@ -33,3 +33,7 @@ Future.wait
 [How to run multiple Dart futures in parallel](https://alvinalexander.com/dart/how-run-multiple-dart-futures-in-parallel)
 
 [Dartlang wait more than one future](https://stackoverflow.com/questions/42176092/dartlang-wait-more-than-one-future)
+
+Future.then chain call
+
+[Flutter篇之你真的会使用Future吗？](https://juejin.im/post/5d317e5af265da1b6c5faf73)
