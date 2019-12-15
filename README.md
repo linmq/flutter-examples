@@ -49,3 +49,7 @@ Reference: [Container class](https://api.flutter.dev/flutter/widgets/Container-c
 7. [startup_namer](/startup_namer)
 
 Reference: [Write your first Flutter app, part 1](https://flutter.dev/docs/get-started/codelab)
+
+8. [Debugging UI Cheat Sheet](/debugging_ui_cheat_sheet)
+
+Reference: [Debugging UI Cheat Sheet](https://medium.com/@louagejulien/flutter-debugging-ui-cheat-sheet-18a7b09dd468)
