@@ -128,22 +128,23 @@ class _MyHomePageState extends State<MyHomePage> {
 // ==================================================================================
   
   Future<int> asyncX(int x) async {
+    x++;
     await Future<String>.delayed(const Duration(seconds: 2));
     return x;
   }
 
   Future<void> _futureChain() async {
-    await asyncX(4).then((val) {
-      print('val: $val');
-      return asyncX(5);
-    }).then((val) {
-      print('val: $val');
-      return asyncX(6);
-    }).then((val) {
-      print('val: $val');
-      return asyncX(7);
-    }).then((val) {
-      print('val: $val');
+    await asyncX(4).then((value) {
+      print('value: $value');
+      return asyncX(value);
+    }).then((value) {
+      print('value: $value');
+      return asyncX(value);
+    }).then((value) {
+      print('value: $value');
+      return asyncX(value);
+    }).then((value) {
+      print('value: $value');
     });
   }
 
