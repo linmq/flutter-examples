@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() => runApp(MyApp());
 
@@ -120,7 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> _handlePressButton3() async {
     countSeconds(10);
-    await _futureChain();
+    await _futureForEach();
+    // await _futureChain();
     // await fetchUserOrderTwice();
     // await asyncTotal();
   }
@@ -151,7 +153,27 @@ class _MyHomePageState extends State<MyHomePage> {
 // ==================================================================================
 // Future.foreach(Iterable elements, FutureOr action(T element))
 
+Future<bool> isPrimeNumber(int number) async {  
+  if (number == 1) return false;
+  if (number == 2) return true;
 
+  double mysqrt = sqrt(number);
+  int limit = mysqrt.ceil();
+
+  for (int i = 2; i <= limit; ++i)  {
+    if (number % i == 0)  return false;
+  }
+
+  return true;
+}
+
+Future<void> _futureForEach() async {
+  await Future.forEach([1,2,3,4,5,6,7,8,9,10], (int n) => 
+    isPrimeNumber(n)
+    .then((x) => print("$n${x ? " is" : " is not"} a prime number")));
+  
+  print('done!');
+}
 
 // ==================================================================================
 
