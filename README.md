@@ -37,3 +37,7 @@ Future.wait
 Future.then chain call
 
 [Flutter篇之你真的会使用Future吗？](https://juejin.im/post/5d317e5af265da1b6c5faf73)
+
+Futurn.forEach
+
+[Dart Fundamentals – Async / Await](https://codingwithjoe.com/dart-fundamentals-async-await/)
