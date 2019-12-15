@@ -50,6 +50,8 @@ Reference: [Container class](https://api.flutter.dev/flutter/widgets/Container-c
 
 Reference: [Write your first Flutter app, part 1](https://flutter.dev/docs/get-started/codelab)
 
+[Write your first Flutter app, part 2](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/#2)
+
 8. [Debugging UI Cheat Sheet](/debugging_ui_cheat_sheet)
 
 Reference: [Debugging UI Cheat Sheet](https://medium.com/@louagejulien/flutter-debugging-ui-cheat-sheet-18a7b09dd468)
