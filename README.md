@@ -63,3 +63,7 @@ Reference: [InkWell class](https://api.flutter.dev/flutter/material/InkWell-clas
 10. [url_launcher](/url_launcher_example)
 
 Reference: [url_launcher](https://pub.dev/packages/url_launcher)
+
+11. [encrypt_example](/encrypt_example)
+
+Reference: [encrypt](https://pub.dev/packages/encrypt)
