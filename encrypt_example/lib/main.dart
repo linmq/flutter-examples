@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _encryptTest() {
     final plainText = "this is plain text";
-    final key = encryptLib.Key.fromLength(32);
+    final key = encryptLib.Key.fromUtf8('d45ad84d45c1d998d118a7cc6d88dba7');
     final iv = encryptLib.IV.fromLength(16);
     final encrypter = encryptLib.Encrypter(encryptLib.AES(key));
     final encrypted = encrypter.encrypt(plainText, iv: iv);
@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   _decryptTest() {
-    final key = encryptLib.Key.fromLength(32);
+    final key = encryptLib.Key.fromUtf8('d45ad84d45c1d998d118a7cc6d88dba7');
     final iv = encryptLib.IV.fromLength(16);
     final encrypter = encryptLib.Encrypter(encryptLib.AES(key));
     final decrypted = encrypter.decrypt64(_encryptedContent, iv: iv);
