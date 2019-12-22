@@ -76,3 +76,9 @@ Reference: [qrscan](https://pub.dev/packages/qrscan)
 
 Reference: [RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
 
+14. [FlatButton](/flat_button_example)
+
+Reference: [FlatButton](https://api.flutter.dev/flutter/material/FlatButton-class.html)
+
+
+
