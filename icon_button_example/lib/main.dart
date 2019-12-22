@@ -50,7 +50,26 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             });
           },
         ),
-        Text('Volume : $_volume')
+        Text('Volume : $_volume'),
+        Padding(
+          padding: EdgeInsets.all(50),
+        ),
+        Material(
+          color: Colors.white,
+          child: Center(
+            child: Ink(
+              decoration: const ShapeDecoration(
+                color: Colors.lightBlue,
+                shape: CircleBorder(),
+              ),
+              child: IconButton(
+                icon: Icon(Icons.android),
+                color: Colors.white,
+                onPressed: () {},
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }
