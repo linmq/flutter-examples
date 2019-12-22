@@ -94,3 +94,7 @@ Reference: [OutlineButton](https://api.flutter.dev/flutter/material/OutlineButto
 
 Reference: [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
 
+18. [ConstrainedBox, SizedBox, BoxConstrains.tightFor()](https://book.flutterchina.club/chapter5/constrainedbox_and_sizebox.html)
+
+Reference: [尺寸限制类容器](https://book.flutterchina.club/chapter5/constrainedbox_and_sizebox.html)
+
