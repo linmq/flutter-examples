@@ -80,9 +80,11 @@ Reference: [RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-
 
 Reference: [FlatButton](https://api.flutter.dev/flutter/material/FlatButton-class.html)
 
-15. [IconButton Example, IconButton adding a filled background, Ink Widget](/icon_button_example)
+15. [IconButton Example, IconButton adding a filled background, Ink Widget, Padding Widget](/icon_button_example)
 
 Reference: [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 
+16. [Outline Button](/outline_button_example)
 
+Reference: [OutlineButton](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
 
