@@ -98,3 +98,11 @@ Reference: [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
 
 Reference: [尺寸限制类容器](https://book.flutterchina.club/chapter5/constrainedbox_and_sizebox.html)
 
+19. [QRCode Scanner](/qrcode_scanner_example)
+
+Reference: [Flutter: QR Code Scanner App | Barcode Scan](https://www.youtube.com/watch?v=siuJhQ9BqsU)
+
+[Flutter QRCode Scanner APP](https://github.com/iampawan/FlutterQRScanner-App)
+
+[Android dependency 'androidx.core:core' has different version for the compile (1.0.0) and runtime (1.0.1) classpath. You should manually set the same version via DependencyResolution](https://github.com/flutter/flutter/issues/27254)
+
