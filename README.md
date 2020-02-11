@@ -108,10 +108,17 @@ Reference: [Flutter: QR Code Scanner App | Barcode Scan](https://www.youtube.com
 
 20. [simple dialog](/simple_dialog_demo)
 
-[SimpleDialog Class](https://api.flutter.dev/flutter/material/SimpleDialog-class.html)
+Reference: [SimpleDialog Class](https://api.flutter.dev/flutter/material/SimpleDialog-class.html)
 
 21. [alert dialog](/alert_dialog_demo)
 
 textfield in an AlertDialog
 
-[AlertDialog class](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
+Reference: [AlertDialog class](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
+
+22. [flutter_slidable](/flutter_slidable_example)
+
+slidable list item
+
+Reference: [flutter_slidable](https://pub.dev/packages/flutter_slidable)
+
