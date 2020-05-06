@@ -106,6 +106,8 @@ Reference: [Flutter: QR Code Scanner App | Barcode Scan](https://www.youtube.com
 
 [Android dependency 'androidx.core:core' has different version for the compile (1.0.0) and runtime (1.0.1) classpath. You should manually set the same version via DependencyResolution](https://github.com/flutter/flutter/issues/27254)
 
+[barcode_scan](https://pub.dev/packages/barcode_scan)
+
 20. [simple dialog](/simple_dialog_demo)
 
 Reference: [SimpleDialog Class](https://api.flutter.dev/flutter/material/SimpleDialog-class.html)
