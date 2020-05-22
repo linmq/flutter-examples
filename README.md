@@ -8,6 +8,8 @@ Some examples of Flutter
 
 Reference: [ListTile Class](https://api.flutter.dev/flutter/material/ListTile-class.html)
 
+<img src="image/listview_simple_01.png" height="600em" />
+
 2. [ListView Dismissible](/listview_dismissible)
 
 Reference: [Implement swipe to dismiss](https://flutter.dev/docs/cookbook/gestures/dismissible)
