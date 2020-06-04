@@ -130,3 +130,10 @@ Reference: [flutter_slidable](https://pub.dev/packages/flutter_slidable)
 
 Reference: [https://github.com/Oclemy/nested_tabs](https://github.com/Oclemy/nested_tabs)
 
+24. [BotToast](/bot_toast_example)
+
+BotToast, including Notification and Loading
+
+<img src="image/bot_toast_01.png" height="600em" />
+
+Reference: [https://pub.dev/packages/bot_toast](https://pub.dev/packages/bot_toast)
