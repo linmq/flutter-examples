@@ -137,3 +137,11 @@ BotToast, including Notification and Loading
 <img src="image/bot_toast_01.png" height="600em" />
 
 Reference: [https://pub.dev/packages/bot_toast](https://pub.dev/packages/bot_toast)
+
+25. [flutter_swiper](/flutter_swiper_example)
+
+Swiper example
+
+<img src="image/flutter_swiper_01.png" height="600em" />
+
+Reference: [https://pub.dev/packages/flutter_swiper](https://pub.dev/packages/flutter_swiper)
