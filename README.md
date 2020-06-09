@@ -145,3 +145,15 @@ Swiper example
 <img src="image/flutter_swiper_01.png" height="600em" />
 
 Reference: [https://pub.dev/packages/flutter_swiper](https://pub.dev/packages/flutter_swiper)
+
+26. [provider](/provider_example)
+
+Provider example
+
+<img src="image/provider_example_01.png" height="600em" />
+
+Reference: [https://pub.dev/packages/provider#-example-tab-](https://pub.dev/packages/provider#-example-tab-)
+
+
+
+
