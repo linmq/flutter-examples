@@ -164,6 +164,12 @@ Reference: [https://github.com/flutter/samples/tree/master/provider_shopper](htt
 
 Reference: [Simple app state management](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple)
 
+28. [permission_handler](/permission_handler_example)
+
+<img src="image/permission_handler_example_01.png" height="600em" />
+
+Reference: [https://pub.dev/packages/permission_handler#-readme-tab-](https://pub.dev/packages/permission_handler#-readme-tab-)
+
 
 
 
