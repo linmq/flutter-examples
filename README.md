@@ -172,10 +172,19 @@ Reference: [https://pub.dev/packages/permission_handler#-readme-tab-](https://pu
 
 29. [expanded](/expanded_example)
 
-<img src="image/permission_handler_example_01.png" height="600em" />
+This example shows how to use an [Expanded] widget in a [Column] so that it's middle child, a [Container] here, expands to fill the space.
+
+<img src="image/expanded_example_01.jpg" height="600em" />
 
 Reference: [Expanded class](https://api.flutter.dev/flutter/widgets/Expanded-class.html)
 
+30. [expanded with flex factor](/expanded_example2)
+
+This example shows how to use an [Expanded] widget in a [Row] with multiple children expanded, utilizing the [flex] factor to prioritize available space.
+
+<img src="image/expanded_example2_01.jpg" height="600em" />
+
+Reference: [Expanded class](https://api.flutter.dev/flutter/widgets/Expanded-class.html)
 
 
 
