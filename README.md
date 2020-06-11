@@ -170,6 +170,12 @@ Reference: [Simple app state management](https://flutter.dev/docs/development/da
 
 Reference: [https://pub.dev/packages/permission_handler#-readme-tab-](https://pub.dev/packages/permission_handler#-readme-tab-)
 
+29. [expanded](/expanded_example)
+
+<img src="image/permission_handler_example_01.png" height="600em" />
+
+Reference: [Expanded class](https://api.flutter.dev/flutter/widgets/Expanded-class.html)
+
 
 
 
