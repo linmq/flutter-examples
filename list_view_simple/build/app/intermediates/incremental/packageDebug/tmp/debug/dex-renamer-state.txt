@@ -1,4 +1,0 @@
-#Sun Dec 08 11:09:48 HKT 2019
-base.0=/Users/minquanlin/develop/flutter-examples-Leo/list_view_simple/build/app/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex
