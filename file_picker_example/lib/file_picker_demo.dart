@@ -9,14 +9,14 @@ class FilePickerDemo extends StatefulWidget {
 }
 
 class _FilePickerDemoState extends State<FilePickerDemo> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   String _fileName;
   String _path;
   Map<String, String> _paths;
   String _extension;
   bool _loadingPath = false;
   bool _multiPick = false;
-  bool _hasValidMime = false;
-  FileType _pickingType;
+  FileType _pickingType = FileType.any;
   TextEditingController _controller = new TextEditingController();
 
   @override
@@ -26,35 +26,59 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
   }
 
   void _openFileExplorer() async {
-    if (_pickingType != FileType.CUSTOM || _hasValidMime) {
-      setState(() => _loadingPath = true);
-      try {
-        if (_multiPick) {
-          _path = null;
-          _paths = await FilePicker.getMultiFilePath(
-              type: _pickingType, fileExtension: _extension);
-        } else {
-          _paths = null;
-          _path = await FilePicker.getFilePath(
-              type: _pickingType, fileExtension: _extension);
-        }
-      } on PlatformException catch (e) {
-        print("Unsupported operation" + e.toString());
+    setState(() => _loadingPath = true);
+    try {
+      if (_multiPick) {
+        _path = null;
+        _paths = await FilePicker.getMultiFilePath(
+            type: _pickingType,
+            allowedExtensions: (_extension?.isNotEmpty ?? false)
+                ? _extension?.replaceAll(' ', '')?.split(',')
+                : null);
+      } else {
+        _paths = null;
+        _path = await FilePicker.getFilePath(
+            type: _pickingType,
+            allowedExtensions: (_extension?.isNotEmpty ?? false)
+                ? _extension?.replaceAll(' ', '')?.split(',')
+                : null);
       }
-      if (!mounted) return;
-      setState(() {
-        _loadingPath = false;
-        _fileName = _path != null
-            ? _path.split('/').last
-            : _paths != null ? _paths.keys.toString() : '...';
-      });
+    } on PlatformException catch (e) {
+      print("Unsupported operation" + e.toString());
     }
+    if (!mounted) return;
+    setState(() {
+      _loadingPath = false;
+      _fileName = _path != null
+          ? _path.split('/').last
+          : _paths != null ? _paths.keys.toString() : '...';
+    });
+  }
+
+  void _clearCachedFiles() {
+    FilePicker.clearTemporaryFiles().then((result) {
+      _scaffoldKey.currentState.showSnackBar(
+        SnackBar(
+          backgroundColor: result ? Colors.green : Colors.red,
+          content: Text((result
+              ? 'Temporary files removed with success.'
+              : 'Failed to clean temporary files')),
+        ),
+      );
+    });
+  }
+
+  void _selectFolder() {
+    FilePicker.getDirectoryPath().then((value) {
+      setState(() => _path = value);
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
       home: new Scaffold(
+        key: _scaffoldKey,
         appBar: new AppBar(
           title: const Text('File Picker example app'),
         ),
@@ -73,35 +97,39 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
                       items: <DropdownMenuItem>[
                         new DropdownMenuItem(
                           child: new Text('FROM AUDIO'),
-                          value: FileType.AUDIO,
+                          value: FileType.audio,
                         ),
                         new DropdownMenuItem(
                           child: new Text('FROM IMAGE'),
-                          value: FileType.IMAGE,
+                          value: FileType.image,
                         ),
                         new DropdownMenuItem(
                           child: new Text('FROM VIDEO'),
-                          value: FileType.VIDEO,
+                          value: FileType.video,
+                        ),
+                        new DropdownMenuItem(
+                          child: new Text('FROM MEDIA'),
+                          value: FileType.media,
                         ),
                         new DropdownMenuItem(
                           child: new Text('FROM ANY'),
-                          value: FileType.ANY,
+                          value: FileType.any,
                         ),
                         new DropdownMenuItem(
                           child: new Text('CUSTOM FORMAT'),
-                          value: FileType.CUSTOM,
+                          value: FileType.custom,
                         ),
                       ],
                       onChanged: (value) => setState(() {
                             _pickingType = value;
-                            if (_pickingType != FileType.CUSTOM) {
+                            if (_pickingType != FileType.custom) {
                               _controller.text = _extension = '';
                             }
                           })),
                 ),
                 new ConstrainedBox(
                   constraints: BoxConstraints.tightFor(width: 100.0),
-                  child: _pickingType == FileType.CUSTOM
+                  child: _pickingType == FileType.custom
                       ? new TextFormField(
                           maxLength: 15,
                           autovalidate: true,
@@ -110,15 +138,6 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
                               InputDecoration(labelText: 'File extension'),
                           keyboardType: TextInputType.text,
                           textCapitalization: TextCapitalization.none,
-                          validator: (value) {
-                            RegExp reg = new RegExp(r'[^a-zA-Z0-9]');
-                            if (reg.hasMatch(value)) {
-                              _hasValidMime = false;
-                              return 'Invalid format';
-                            }
-                            _hasValidMime = true;
-                            return null;
-                          },
                         )
                       : new Container(),
                 ),
@@ -134,9 +153,21 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
                 ),
                 new Padding(
                   padding: const EdgeInsets.only(top: 50.0, bottom: 20.0),
-                  child: new RaisedButton(
-                    onPressed: () => _openFileExplorer(),
-                    child: new Text("Open file picker"),
+                  child: Column(
+                    children: <Widget>[
+                      new RaisedButton(
+                        onPressed: () => _openFileExplorer(),
+                        child: new Text("Open file picker"),
+                      ),
+                      new RaisedButton(
+                        onPressed: () => _selectFolder(),
+                        child: new Text("Pick folder"),
+                      ),
+                      new RaisedButton(
+                        onPressed: () => _clearCachedFiles(),
+                        child: new Text("Clear temporary files"),
+                      ),
+                    ],
                   ),
                 ),
                 new Builder(

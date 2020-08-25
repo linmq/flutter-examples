@@ -186,5 +186,13 @@ This example shows how to use an [Expanded] widget in a [Row] with multiple chil
 
 Reference: [Expanded class](https://api.flutter.dev/flutter/widgets/Expanded-class.html)
 
+31. [file_picker_example](/file_picker_example)
+
+A package that allows you to use a native file explorer to pick single or multiple absolute file paths, with extensions filtering support.
+
+<img src="https://github.com/miguelpruivo/flutter_file_picker/raw/master/file_picker/example/example.gif" height="600em" />
+
+Reference: [file_picker][https://pub.dev/packages/file_picker]
+
 
 
