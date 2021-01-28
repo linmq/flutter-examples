@@ -190,7 +190,9 @@ Reference: [Expanded class](https://api.flutter.dev/flutter/widgets/Expanded-cla
 
 A package that allows you to use a native file explorer to pick single or multiple absolute file paths, with extensions filtering support.
 
-<img src="https://github.com/miguelpruivo/flutter_file_picker/raw/master/file_picker/example/example.gif" height="600em" />
+<img src="image/file_picker_example.gif" height="600em" />
+
+<img src="image/file_picker_example_ios.gif" height="600em" />
 
 Reference: [file_picker][https://pub.dev/packages/file_picker]
 
