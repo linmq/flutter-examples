@@ -201,3 +201,9 @@ Reference: [file_picker][https://pub.dev/packages/file_picker]
 <img src="image/listview_gridview_example.gif" height="600em" />
 
 Reference: [Flutter: ListView & GridView](https://medium.com/flutterfly-tech/flutter-listview-gridview-ce7177812b1d)
+
+33. [grid_and_list_example](/grid_and_list_example)
+
+<img src="image/grid_and_list_example.png" height="600em" />
+
+Reference: [Layouts in Flutter](https://flutter.dev/docs/development/ui/layout#gridview)
