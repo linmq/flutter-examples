@@ -214,3 +214,8 @@ Reference: [Layouts in Flutter](https://flutter.dev/docs/development/ui/layout#g
 
 Reference: [Layouts in Flutter](https://flutter.dev/docs/development/ui/layout#stack)
 
+35. [stack_example_2](/stack_example_2)
+
+<img src="image/stack_example_2.png" height="600em" />
+
+Reference: [Layouts in Flutter](https://flutter.dev/docs/development/ui/layout#stack)
