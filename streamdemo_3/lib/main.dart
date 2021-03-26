@@ -32,6 +32,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   StreamSubscription _streamSubscription;
+  StreamController<String> _streamController;
 
   // the data parameter here is data from _stream
   void onData(String data) {
@@ -47,12 +48,18 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<String> fetchData() async{
-    await Future.delayed(Duration(seconds: 10));  // delay 10 second then return data
+    await Future.delayed(Duration(seconds: 2));  // delay 2 second then return data
     return "I am the data in the Stream";
   }
 
+  void _addDataToStream() async {
+    print('Add');
+    String data = await fetchData();
+    _streamController.add(data);
+  }
+
   void _pauseStream() {
-    print('pause');
+    print('Pause');
     _streamSubscription.pause();
   }
 
@@ -75,10 +82,11 @@ class _MyHomePageState extends State<MyHomePage> {
     // Create a Stream
     print('Create a Stream');
     // Create a Stream and get data from Future
-    Stream<String> _stream = Stream.fromFuture(fetchData());
+    // Stream<String> _stream = Stream.fromFuture(fetchData());
+    _streamController = new StreamController<String>();
 
     print('Start listening this Stream');
-    _streamSubscription = _stream.listen(onData, onError: onError, onDone: onDone);
+    _streamSubscription = _streamController.stream.listen(onData, onError: onError, onDone: onDone);
 
     print('Finish');
   }
@@ -87,34 +95,50 @@ class _MyHomePageState extends State<MyHomePage> {
   void dispose() {
     super.dispose();
     _streamSubscription.cancel();
+    _streamController.close();
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            FlatButton(
-              child: Text('Pause'),
-              color: Theme.of(context).accentColor,
-              onPressed: _pauseStream,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                FlatButton(
+                  child: Text('Add'),
+                  color: Theme.of(context).accentColor,
+                  onPressed: _addDataToStream,
+                ),
+                SizedBox(width: 30,),
+                FlatButton(
+                  child: Text('Pause'),
+                  color: Theme.of(context).accentColor,
+                  onPressed: _pauseStream,
+                ),
+              ],
             ),
-            SizedBox(width: 10,),
-            FlatButton(
-              child: Text('Resume'),
-              color: Theme.of(context).accentColor,
-              onPressed: _resumeStream,
-            ),
-            SizedBox(width: 10,),
-            FlatButton(
-              child: Text('Cancel'),
-              color: Theme.of(context).accentColor,
-              onPressed: _cancelStream,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                FlatButton(
+                  child: Text('Resume'),
+                  color: Theme.of(context).accentColor,
+                  onPressed: _resumeStream,
+                ),
+                SizedBox(width: 30,),
+                FlatButton(
+                  child: Text('Cancel'),
+                  color: Theme.of(context).accentColor,
+                  onPressed: _cancelStream,
+                ),
+              ],
             ),
           ],
-        ),
+        ), 
       ),
     );
   }
