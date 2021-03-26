@@ -210,19 +210,19 @@ Reference: [Layouts in Flutter](https://flutter.dev/docs/development/ui/layout#g
 
 34. [stack_example_1](/stack_example_1)
 
-<img src="image/stack_example_1.png" height="600em" />
+<img src="image/stack_example_1.png" height="300em" />
 
 Reference: [Layouts in Flutter](https://flutter.dev/docs/development/ui/layout#stack)
 
 35. [stack_example_2](/stack_example_2)
 
-<img src="image/stack_example_2.png" height="600em" />
+<img src="image/stack_example_2.png" height="300em" />
 
 Reference: [Layouts in Flutter](https://flutter.dev/docs/development/ui/layout#stack)
 
-35. [stack_example_3](/stack_example_3)
+36. [stack_example_3](/stack_example_3)
 
-<img src="image/stack_example_3.png" height="600em" />
+<img src="image/stack_example_3.png" height="300em" />
 
 Reference: [Stack class](https://api.flutter.dev/flutter/widgets/Stack-class.html)
 
