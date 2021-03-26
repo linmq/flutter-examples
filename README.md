@@ -226,3 +226,32 @@ Reference: [Layouts in Flutter](https://flutter.dev/docs/development/ui/layout#s
 
 Reference: [Stack class](https://api.flutter.dev/flutter/widgets/Stack-class.html)
 
+37. [streamdemo](/streamdemo)
+
+Stream.fromFuture
+
+Reference: [Flutter----Stream讲解](https://blog.csdn.net/mubowen666/article/details/104014939)
+
+38. [streamdemo_1](/streamdemo_1)
+
+Stream onDone
+
+Reference: [Flutter----Stream讲解](https://blog.csdn.net/mubowen666/article/details/104014939)
+
+39. [streamdemo_2](/streamdemo_2)
+
+StreamSubscription pause resume cancel
+
+Reference: [Flutter----Stream讲解](https://blog.csdn.net/mubowen666/article/details/104014939)
+
+40. [streamdemo_3](/streamdemo_3)
+
+StreamController
+
+Reference: [Flutter----Stream讲解](https://blog.csdn.net/mubowen666/article/details/104014939)
+
+41. [streamdemo_4](/streamdemo_4)
+
+StreamBuilder
+
+Reference: [Flutter----Stream讲解](https://blog.csdn.net/mubowen666/article/details/104014939)
