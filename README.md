@@ -100,6 +100,10 @@ Reference: [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
 
 Reference: [尺寸限制类容器](https://book.flutterchina.club/chapter5/constrainedbox_and_sizebox.html)
 
+19. [qr_code_scanner example](/qr_code_scanner_example)
+
+reference: [https://pub.dev/packages/qr_code_scanner][https://pub.dev/packages/qr_code_scanner]
+
 20. [simple dialog](/simple_dialog_demo)
 
 Reference: [SimpleDialog Class](https://api.flutter.dev/flutter/material/SimpleDialog-class.html)
