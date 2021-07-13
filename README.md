@@ -70,7 +70,7 @@ Reference: [url_launcher](https://pub.dev/packages/url_launcher)
 
 Reference: [encrypt](https://pub.dev/packages/encrypt)
 
-12. [qrcode_scan](/qrcode_scan)
+12. [qrscan_example](/qrscan_example)
 
 Reference: [qrscan](https://pub.dev/packages/qrscan)
 
