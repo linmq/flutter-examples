@@ -102,7 +102,7 @@ Reference: [尺寸限制类容器](https://book.flutterchina.club/chapter5/const
 
 19. [qr_code_scanner example](/qr_code_scanner_example)
 
-reference: (https://pub.dev/packages/qr_code_scanner)[https://pub.dev/packages/qr_code_scanner]
+reference: [https://pub.dev/packages/qr_code_scanner](https://pub.dev/packages/qr_code_scanner)
 
 20. [simple dialog](/simple_dialog_demo)
 
