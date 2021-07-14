@@ -249,3 +249,9 @@ Reference: [Flutter----Stream讲解](https://blog.csdn.net/mubowen666/article/de
 StreamBuilder
 
 Reference: [Flutter----Stream讲解](https://blog.csdn.net/mubowen666/article/details/104014939)
+
+42. [bottom navigation example](/bottom_navigation_example)
+
+<img src="image/bottom_navigation_example.png" height="300em" />
+
+reference: [How to Create a BottomNavigationBar with Flutter](https://developer.school/how-to-create-a-bottom-tab-bar-with-flutter/)
