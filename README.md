@@ -253,3 +253,9 @@ reference: [How to Create a BottomNavigationBar with Flutter](https://developer.
 <img src="image/DefaultTabController_example.png" height="600em" />
 
 reference: [Work with tabs](https://flutter.dev/docs/cookbook/design/tabs)
+
+44. [carousel_slider example](/carousel_slider_example)
+
+<img src="image/carousel_slider_example.png" height="600em" />
+
+reference: [carousel slider](https://pub.dev/packages/carousel_slider/example)
