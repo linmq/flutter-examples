@@ -259,3 +259,9 @@ reference: [Work with tabs](https://flutter.dev/docs/cookbook/design/tabs)
 <img src="image/carousel_slider_example.png" height="600em" />
 
 reference: [carousel slider](https://pub.dev/packages/carousel_slider/example)
+
+45. [flutter_spinkit example](/flutter_spinkit_example)
+
+<img src="image/flutter_spinkit_example.png" height="600em">
+
+reference: [flutter spinkit](https://pub.dev/packages/flutter_spinkit/)
