@@ -255,3 +255,9 @@ Reference: [Flutter----Stream讲解](https://blog.csdn.net/mubowen666/article/de
 <img src="image/bottom_navigation_example.png" height="600em" />
 
 reference: [How to Create a BottomNavigationBar with Flutter](https://developer.school/how-to-create-a-bottom-tab-bar-with-flutter/)
+
+43. [DefaultTabController](/default_tab_controller_example)
+
+<img src="image/DefaultTabController_example.png" height="600em" />
+
+reference: [Work with tabs](https://flutter.dev/docs/cookbook/design/tabs)
