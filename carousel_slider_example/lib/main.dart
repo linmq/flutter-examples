@@ -109,15 +109,22 @@ class BasicDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Basic demo')),
       body: Container(
-          child: CarouselSlider(
-        options: CarouselOptions(),
-        items: list
-            .map((item) => Container(
-                  child: Center(child: Text(item.toString())),
+        child: CarouselSlider(
+          options: CarouselOptions(),
+          items: list
+              .map(
+                (item) => Container(
+                  child: Center(
+                    child: Text(
+                      item.toString(),
+                    ),
+                  ),
                   color: Colors.green,
-                ))
-            .toList(),
-      )),
+                ),
+              )
+              .toList(),
+        ),
+      ),
     );
   }
 }
