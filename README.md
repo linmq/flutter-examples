@@ -269,3 +269,11 @@ reference: [flutter spinkit](https://pub.dev/packages/flutter_spinkit/)
 46. [dio example](/dio_example)
 
 reference: [dio example](https://pub.dev/packages/dio)
+
+47. [tabcontroller example](/tabcontroller_example)
+
+reference: [TabController Class](https://api.flutter.dev/flutter/material/TabController-class.html)
+
+48. [pagecontroller example](/pagecontroller_example)
+
+reference: [PageController Class](https://api.flutter.dev/flutter/widgets/PageController-class.html)
