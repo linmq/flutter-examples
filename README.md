@@ -272,8 +272,12 @@ reference: [dio example](https://pub.dev/packages/dio)
 
 47. [tabcontroller example](/tabcontroller_example)
 
+https://user-images.githubusercontent.com/1535374/126591304-c4fb8c44-e837-410b-bfe1-e975bdf17164.mp4
+
 reference: [TabController Class](https://api.flutter.dev/flutter/material/TabController-class.html)
 
 48. [pagecontroller example](/pagecontroller_example)
+
+https://user-images.githubusercontent.com/1535374/126591353-f5f8da88-8629-40c8-9a3b-f1e5d9c53c01.mp4
 
 reference: [PageController Class](https://api.flutter.dev/flutter/widgets/PageController-class.html)
