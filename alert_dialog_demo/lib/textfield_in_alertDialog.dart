@@ -14,13 +14,20 @@ class TextFieldAlertDialog extends StatelessWidget {
             decoration: InputDecoration(hintText: "TextField in Dialog"),
           ),
           actions: <Widget>[
-            new FlatButton(
+            new TextButton(
               child: new Text('CANCEL'),
               onPressed: () {
                 print(_textFieldController.text);
                 Navigator.of(context).pop();
               },
-            )
+            ),
+            new TextButton(
+              child: new Text('OK'),
+              onPressed: () {
+                print(_textFieldController.text);
+                Navigator.of(context).pop();
+              },
+            ),
           ],
         );
       }
@@ -34,9 +41,8 @@ class TextFieldAlertDialog extends StatelessWidget {
         title: Text('TextField in AlertDialog'),
       ),
       body: Center(
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('Show Alert Dialog'),
-          color: Colors.red,
           onPressed: () => _displayDialog(context),
         ),
       ),
