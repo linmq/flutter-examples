@@ -281,3 +281,11 @@ reference: [TabController Class](https://api.flutter.dev/flutter/material/TabCon
 https://user-images.githubusercontent.com/1535374/126591353-f5f8da88-8629-40c8-9a3b-f1e5d9c53c01.mp4
 
 reference: [PageController Class](https://api.flutter.dev/flutter/widgets/PageController-class.html)
+
+49. [percent_indicator example](/percent_indicator_example)
+
+<img src="image/percent_indicator_circular.gif" height="600em">
+
+<img src="image/percent_indicator_linear.gif" height="600em">
+
+reference: [percent_indicator](https://pub.dev/packages/percent_indicator)
