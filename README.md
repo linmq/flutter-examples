@@ -72,6 +72,8 @@ Reference: [encrypt](https://pub.dev/packages/encrypt)
 
 12. [qrscan_example](/qrscan_example)
 
+Only support Android.
+
 Reference: [qrscan](https://pub.dev/packages/qrscan)
 
 13. [RaisedButton](/raised_button_example)
